@@ -21,21 +21,21 @@ const seo = {
 
   author: "Ronit Kumar Verma",
 
-  og: {
-    title: "Ronit Kumar Verma | Backend Developer",
-    description:
-      "Explore the portfolio of Ronit Verma, Backend Developer skilled in Java, Spring Boot, APIs, and scalable systems.",
-    type: "website",
-    url: "https://ronit-verma-portfolio.vercel.app",
-    image: "/og-image.png",
-  },
+    og: {
+      title: "Ronit Kumar Verma | Backend Developer",
+      description:
+        "Explore the portfolio of Ronit Verma, Backend Developer skilled in Java, Spring Boot, APIs, and scalable systems.",
+      type: "website",
+      url: "https://ronit-verma-portfolio.vercel.app",
+      image: "/src/assets/images/ronit_yellow_logo.png",
+    },
 
   twitter: {
     card: "summary_large_image",
     title: "Ronit Kumar Verma | Backend Developer",
     description:
       "Backend Developer specializing in Java, Spring Boot, and scalable backend systems.",
-    image: "/og-image.png",
+    image: "/src/assets/images/ronit_yellow_logo.png",
   },
 
   robots: "index, follow",
