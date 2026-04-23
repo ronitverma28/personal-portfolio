@@ -9,8 +9,7 @@ export const blueTheme = {
   imageHighlight: "#0E6BA8",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#0A2472",
-  headerColor: "#0E6BA877",
-   : "#001C55",
+  headerColor: "#0E6BA877"
 };
 
 export const brownTheme = {
@@ -23,8 +22,7 @@ export const brownTheme = {
   imageHighlight: "#E29F95",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#FB6376",
-  headerColor: "#E29F9577",
-   : "#5D2A42",
+  headerColor: "#E29F9577"
 };
 
 export const purpleTheme = {
@@ -37,8 +35,7 @@ export const purpleTheme = {
   imageHighlight: "#BE95C4",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#5E548E",
-  headerColor: "#BE95C477",
-   : "#231942",
+  headerColor: "#BE95C477"
 };
 
 export const greenTheme = {
