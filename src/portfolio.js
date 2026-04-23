@@ -1,18 +1,44 @@
-
-
-const settings = {
-  isSplash: false,
-};
-
 const seo = {
-  title: "Ronit's Portfolio",
+  title: "Ronit Verma's Portfolio",
   description:
-    "Ronit Kumar Verma's personal portfolio website.",
+    "Ronit Kumar Verma is a Backend Developer skilled in Java, Spring Boot, REST APIs, SQL, and scalable system design. Explore projects, skills, and experience.",
+
+  keywords: [
+    "Ronit Verma",
+    "Ronit Kumar Verma",
+    "Ronit Kumar Verma Portfolio",
+    "Ronit Portfolio",
+    "Ronit Verma Portfolio",
+    "Ronit Verma Backend Developer",
+    "Java Developer Portfolio",
+    "Spring Boot Developer India",
+    "Backend Developer Portfolio",
+    "REST API Developer",
+    "Full Stack Developer India",
+    "Computer Science Student Portfolio",
+    "Hire Java Developer",
+  ],
+
+  author: "Ronit Kumar Verma",
+
   og: {
-    title: "Ronit Kumar Verma Portfolio",
+    title: "Ronit Kumar Verma | Backend Developer",
+    description:
+      "Explore the portfolio of Ronit Verma, Backend Developer skilled in Java, Spring Boot, APIs, and scalable systems.",
     type: "website",
-    url: "http://ronitkumarverma.com/",
+    url: "https://ronit-verma-portfolio.vercel.app",
+    image: "/og-image.png",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Ronit Kumar Verma | Backend Developer",
+    description:
+      "Backend Developer specializing in Java, Spring Boot, and scalable backend systems.",
+    image: "/og-image.png",
+  },
+
+  robots: "index, follow",
 };
 
 const greeting = {
@@ -406,7 +432,6 @@ const contactPageData = {
 };
 
 export {
-  settings,
   seo,
   greeting,
   socialMediaLinks,

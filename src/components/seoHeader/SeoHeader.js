@@ -1,69 +1,79 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import {
-  greeting,
-  seo,
-  socialMediaLinks,
-  contactPageData,
-  certifications,
+    greeting,
+    seo,
+    socialMediaLinks,
+    contactPageData,
+    certifications,
 } from "../../portfolio.js";
 
 function SeoHeader() {
-  let sameAs = [];
-  socialMediaLinks
-    .filter(
-      (media) =>
-        !(media.link.startsWith("tel") || media.link.startsWith("mailto"))
-    )
-    .forEach((media) => {
-      sameAs.push(media.link);
-    });
+    const sameAs = socialMediaLinks
+        .filter(
+            (media) =>
+                !(media.link.startsWith("tel") || media.link.startsWith("mailto"))
+        )
+        .map((media) => media.link);
 
-  let mail = socialMediaLinks
-    .find((media) => media.link.startsWith("mailto"))
-    .link.substring("mailto:".length);
+    const mailObj = socialMediaLinks.find((media) =>
+        media.link.startsWith("mailto")
+    );
+    const mail = mailObj ? mailObj.link.replace("mailto:", "") : "";
 
-  let credentials = [];
-  certifications.certifications.forEach((certification) => {
-    credentials.push({
-      "@context": "https://schema.org",
-      "@type": "EducationalOccupationalCredential",
-      url: certification.certificate_link,
-      name: certification.title,
-      description: certification.subtitle,
-    });
-  });
-  const data = {
-    "@context": "https://schema.org/",
-    "@type": "Person",
-    name: greeting.title,
-    url: seo?.og?.url,
-    email: mail,
-    telephone: contactPageData.phoneSection?.subtitle,
-    sameAs: sameAs,
-    worksFor: {
-      "@type": "Organization",
-    },
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: contactPageData.addressSection?.locality,
-      addressRegion: contactPageData.addressSection?.region,
-      addressCountry: contactPageData.addressSection?.country,
-      postalCode: contactPageData.addressSection?.postalCode,
-      streetAddress: contactPageData.addressSection?.streetAddress,
-    },
-    hasCredential: credentials,
-  };
-  return (
-    <Helmet>
-      <title>{seo.title}</title>
-      <meta name="description" content={seo.description} />
-      <meta property="og:title" content={seo?.og?.title} />
-      <meta property="og:type" content={seo?.og?.type} />
-      <meta property="og:url" content={seo?.og?.url} />
-      <script type="application/ld+json">{JSON.stringify(data)}</script>
-    </Helmet>
-  );
+    const credentials = certifications.certifications.map((certification) => ({
+        "@type": "EducationalOccupationalCredential",
+        url: certification.certificate_link,
+        name: certification.title,
+        description: certification.subtitle,
+    }));
+
+    const data = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: greeting.title,
+        url: seo?.og?.url,
+        email: mail,
+        telephone: contactPageData.phoneSection?.subtitle,
+        sameAs: sameAs,
+        address: {
+            "@type": "PostalAddress",
+            addressLocality: contactPageData.addressSection?.locality,
+            addressRegion: contactPageData.addressSection?.region,
+            addressCountry: contactPageData.addressSection?.country,
+            postalCode: contactPageData.addressSection?.postalCode,
+            streetAddress: contactPageData.addressSection?.streetAddress,
+        },
+        hasCredential: credentials,
+    };
+
+    return (
+        <Helmet>
+            <title>{seo.title}</title>
+            <meta name="description" content={seo.description} />
+            <meta name="keywords" content={seo.keywords.join(", ")} />
+            <meta name="author" content={seo.author} />
+            <meta name="robots" content={seo.robots} />
+
+            <link rel="canonical" href={seo.og.url} />
+
+            <meta property="og:title" content={seo.og.title} />
+            <meta property="og:description" content={seo.og.description} />
+            <meta property="og:type" content={seo.og.type} />
+            <meta property="og:url" content={seo.og.url} />
+            <meta property="og:image" content={seo.og.image} />
+            <meta property="og:site_name" content="Ronit Portfolio" />
+
+            <meta name="twitter:card" content={seo.twitter.card} />
+            <meta name="twitter:title" content={seo.twitter.title} />
+            <meta name="twitter:description" content={seo.twitter.description} />
+            <meta name="twitter:image" content={seo.twitter.image} />
+
+            <script type="application/ld+json">
+                {JSON.stringify(data)}
+            </script>
+        </Helmet>
+    );
 }
 
 export default SeoHeader;
