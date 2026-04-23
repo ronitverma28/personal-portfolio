@@ -10,7 +10,7 @@ export const blueTheme = {
   compImgHighlight: "#E6E6E6",
   jacketColor: "#0A2472",
   headerColor: "#0E6BA877",
-  splashBg: "#001C55",
+   : "#001C55",
 };
 
 export const brownTheme = {
@@ -24,7 +24,7 @@ export const brownTheme = {
   compImgHighlight: "#E6E6E6",
   jacketColor: "#FB6376",
   headerColor: "#E29F9577",
-  splashBg: "#5D2A42",
+   : "#5D2A42",
 };
 
 export const purpleTheme = {
@@ -38,7 +38,7 @@ export const purpleTheme = {
   compImgHighlight: "#E6E6E6",
   jacketColor: "#5E548E",
   headerColor: "#BE95C477",
-  splashBg: "#231942",
+   : "#231942",
 };
 
 export const greenTheme = {
@@ -51,8 +51,8 @@ export const greenTheme = {
   imageHighlight: "#55a630",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#007f5f",
-  headerColor: "#55a63077",
-  splashBg: "#003F2F",
+  headerColor: "#55a63077"
+  
 };
 
 export const redTheme = {
@@ -65,8 +65,7 @@ export const redTheme = {
   imageHighlight: "#dc2f02",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#9d0208",
-  headerColor: "#dc2f0277",
-  splashBg: "#6a040f",
+  headerColor: "#dc2f0277"
 };
 
 export const blackTheme = {
@@ -80,7 +79,6 @@ export const blackTheme = {
   compImgHighlight: "#E6E6E6",
   jacketColor: "#8d99ae",
   headerColor: "#fca31177",
-  splashBg: "#14213d",
 };
 
 export const pinkTheme = {
@@ -94,7 +92,6 @@ export const pinkTheme = {
   compImgHighlight: "#E6E6E6",
   jacketColor: "#8d99ae",
   headerColor: "#ef476f77",
-  splashBg: "#620E34",
 };
 
 export const violetTheme = {
@@ -107,8 +104,7 @@ export const violetTheme = {
   imageHighlight: "#9b5de5",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#763D8B",
-  headerColor: "#9b5de577",
-  splashBg: "#430A58",
+  headerColor: "#9b5de577"
 };
 
 export const tealTheme = {
@@ -122,7 +118,6 @@ export const tealTheme = {
   compImgHighlight: "#E6E6E6",
   jacketColor: "#56a3a6",
   headerColor: "#07beb877",
-  splashBg: "#084c61",
 };
 
 export const orangeTheme = {
@@ -135,8 +130,7 @@ export const orangeTheme = {
   imageHighlight: "#FF6B35",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#d7263d",
-  headerColor: "#FF6B3577",
-  splashBg: "#99401F",
+  headerColor: "#FF6B3577"
 };
 
 export const yellowTheme = {
@@ -149,8 +143,7 @@ export const yellowTheme = {
   imageHighlight: "#ffea3d",
   compImgHighlight: "#E6E6E6",
   jacketColor: "#4e342e",
-  headerColor: "#FFEA3D",
-  splashBg: "#5f4339",
+  headerColor: "#FFEA3D"
 };
 
 export const materialDarkTheme = {
@@ -164,7 +157,6 @@ export const materialDarkTheme = {
   compImgHighlight: "#E6E6E6",
   jacketColor: "#8eacbb",
   headerColor: "#34515e",
-  splashBg: "#4f5b62",
 };
 
 export const materialLightTheme = {
@@ -177,8 +169,7 @@ export const materialLightTheme = {
   imageHighlight: "#2b1958",
   compImgHighlight: "#E1E2E1",
   jacketColor: "#E1E2E1",
-  headerColor: "#E1E2E1",
-  splashBg: "#7d56c2",
+  headerColor: "#E1E2E1"
 };
 
 export const materialTealTheme = {
@@ -191,8 +182,7 @@ export const materialTealTheme = {
   imageHighlight: "#0a343c",
   compImgHighlight: "#E1E2E1",
   jacketColor: "#E1E2E1",
-  headerColor: "#E1E2E1",
-  splashBg: "#05505E",
+  headerColor: "#E1E2E1"
 };
 
 export const chosenTheme = blueTheme;
