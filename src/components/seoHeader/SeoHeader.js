@@ -68,7 +68,7 @@ function SeoHeader() {
             <meta name="twitter:title" content={seo.twitter.title} />
             <meta name="twitter:description" content={seo.twitter.description} />
             <meta name="twitter:image" content={seo.twitter.image} />
-            {/* <meta name="google-site-verification" content="koLnDB1FT3Mr0pEZH2-Aw6iBgexfjsOoaQYgLsBqNKE" /> */}
+            <meta name="google-site-verification" content="koLnDB1FT3Mr0pEZH2-Aw6iBgexfjsOoaQYgLsBqNKE" />
 
             <script type="application/ld+json">
                 {JSON.stringify(data)}
