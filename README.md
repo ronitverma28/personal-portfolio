@@ -1,115 +1,36 @@
-# Master Portfolio
+# 🌐 Personal Portfolio Website  
 
-`Master Portfolio` is a React-based personal portfolio application with dynamic GitHub data integration and production build/deploy support.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=26&duration=3000&color=00C2FF&center=true&vCenter=true&width=600&lines=Welcome+to+My+Portfolio+🚀;Backend+Developer+%7C+Java+%7C+Spring+Boot;Building+Scalable+Systems" />
+</p>
 
-## Tech Stack
+---
 
-- React 16
-- React Router DOM
-- Styled Components
-- Base Web (`baseui`) + Styletron
-- Apollo Boost + GitHub GraphQL API
-- React PDF
-- React Reveal
-- Chart.js / react-chartjs-2
-- Node.js + npm
+## 👨‍💻 About This Project  
 
-## Features
+This is my **personal portfolio website** designed to showcase my **skills, projects, and experience** as a Backend Developer.  
 
-- Multi-section personal portfolio pages (home, education, projects, contact, resume)
-- Theme-driven UI styling
-- GitHub open-source data cards (projects, issues, pull requests, organizations)
-- Responsive UI with production build support
-- Static-site deployment via GitHub Pages
+The portfolio highlights my work in **Java, Spring Boot, REST APIs, and system design**, along with real-world projects that demonstrate my development capabilities.  
 
-## Folder Structure
+---
 
-```text
-.
-├── public/                     # Static assets, index template, route fallback
-├── src/
-│   ├── assets/                 # Fonts, images, icon packs, documents
-│   ├── components/             # Reusable UI components
-│   ├── containers/             # Section containers
-│   ├── pages/                  # Route-level pages
-│   ├── shared/                 # Static/data JSON files
-│   ├── App.js                  # App root
-│   ├── portfolio.js            # Portfolio content/config
-│   └── theme.js                # Theme definitions
-├── git_data_fetcher.mjs        # GitHub GraphQL data sync script
-├── package.json
-└── .env.example
-```
+## ✨ Features  
 
-## Setup (Local)
+- 🎯 Clean and modern UI  
+- 📱 Fully responsive design  
+- 🚀 Fast and optimized performance  
+- 📂 Project showcase section  
+- 📄 Resume & skills display  
+- 📬 Contact section  
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Create environment file:
-   ```bash
-   cp .env.example .env
-   ```
-3. Set environment values in `.env`.
+---
 
-## Run Commands
+## 🛠️ Tech Stack  
 
-- Start development server:
-  ```bash
-  npm start
-  ```
-- Run tests:
-  ```bash
-  npm test
-  ```
-- Create production build:
-  ```bash
-  npm run build
-  ```
-- Deploy to GitHub Pages:
-  ```bash
-  npm run deploy
-  ```
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,git,github" />
+</p>
 
-## API Endpoints
-
-This project consumes the GitHub GraphQL API:
-
-- `POST https://api.github.com/graphql`
-
-Used by `git_data_fetcher.mjs` to pull and write:
-- `src/shared/opensource/pull_requests.json`
-- `src/shared/opensource/issues.json`
-- `src/shared/opensource/organizations.json`
-- `src/shared/opensource/projects.json`
-
-## Deployment Steps
-
-1. Ensure `.env` is configured.
-2. Run:
-   ```bash
-   npm run build
-   ```
-3. Deploy:
-   ```bash
-   npm run deploy
-   ```
-4. Confirm `homepage` in `package.json` matches your deployment base path.
-
-## Environment Variables
-
-Required:
-
-- `GITHUB_TOKEN`: GitHub personal access token with GraphQL access
-- `GITHUB_USERNAME`: GitHub username to query
-
-Optional:
-
-- Standard CRA environment variables as needed for deployment/runtime behavior.
-
-## Production Readiness Notes
-
-- Secrets are externalized to environment variables.
-- Source comments and debug logs have been removed from app code.
-- Production build verification: `npm run build` succeeds.
+- **Frontend:** HTML, CSS, JavaScript / React / Next.js  
+- **Styling:** CSS / Tailwind (if used)  
+- **Deployment:** Vercel / Netlify  
