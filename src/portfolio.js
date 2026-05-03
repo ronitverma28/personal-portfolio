@@ -48,7 +48,7 @@ const greeting = {
   subTitle:
     "Building scalable, secure, and high-performance backend systems.",
   resumeLink:
-    "https://drive.google.com/file/d/11T6JpLJMriiVYXdCKW7n0E0YCaU6eE5E/view?usp=sharing",
+    "https://drive.google.com/file/d/1-GLlAJkAaoxg1UkJhxroLjtN2Qnqh7Ur/view?usp=sharing",
   portfolio_repository: "https://github.com/ronitverma28/personal-portfolio",
   githubProfile: "https://github.com/ronitverma28",
 };
