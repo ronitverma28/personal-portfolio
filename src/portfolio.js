@@ -21,14 +21,14 @@ const seo = {
 
   author: "Ronit Kumar Verma",
 
-    og: {
-      title: "Ronit Kumar Verma | Backend Developer",
-      description:
-        "Explore the portfolio of Ronit Verma, Backend Developer skilled in Java, Spring Boot, APIs, and scalable systems.",
-      type: "website",
-      url: "https://ronit-verma-portfolio.vercel.app",
-      image: "/src/assets/images/ronit_yellow_logo.png",
-    },
+  og: {
+    title: "Ronit Kumar Verma | Backend Developer",
+    description:
+      "Explore the portfolio of Ronit Verma, Backend Developer skilled in Java, Spring Boot, APIs, and scalable systems.",
+    type: "website",
+    url: "https://ronit-verma-portfolio.vercel.app",
+    image: "/src/assets/images/ronit_yellow_logo.png",
+  },
 
   twitter: {
     card: "summary_large_image",
@@ -346,13 +346,12 @@ const degrees = {
 
 const certifications = {
   certifications: [
-
     {
-      title: "Java Programming for Beginners",
-      logo_path: "ibm_logo.png",
+      title: "Java Programming Fundamentals for Spring Boot Development",
+      logo_path: "board_infinity_logo.svg",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/certificate/WALX8GE98J62",
-      alt_name: "IBM",
+        "https://www.coursera.org/account/accomplishments/certificate/RDX2SAK918ED",
+      alt_name: "Board Infinity",
       color_code: "#fff",
     },
     {
@@ -364,19 +363,19 @@ const certifications = {
       color_code: "#fff",
     },
     {
-      title: "Generative AI: Introduction and Applications",
-      logo_path: "ibm_logo.png",
+      title: "Java Spring Boot Backend Development",
+      logo_path: "board_infinity_logo.svg",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/certificate/1T6B3KJ3PXHO",
-      alt_name: "IBM",
+        "https://www.coursera.org/account/accomplishments/specialization/certificate/7XD4901LBIFC",
+      alt_name: "Board Infinity",
       color_code: "#fff",
     },
     {
-      title: "AWS Cloud Technical Essentials",
-      logo_path: "aws_logo.png",
+      title: "Java Programming for Beginners",
+      logo_path: "ibm_logo.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/certificate/2CNWXYJF5L87",
-      alt_name: "AWS",
+        "https://www.coursera.org/account/accomplishments/certificate/WALX8GE98J62",
+      alt_name: "IBM",
       color_code: "#fff",
     }
   ],
