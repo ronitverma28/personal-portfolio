@@ -27,7 +27,7 @@ const seo = {
       "Explore the portfolio of Ronit Verma, Backend Developer skilled in Java, Spring Boot, APIs, and scalable systems.",
     type: "website",
     url: "https://ronit-verma-portfolio.vercel.app",
-    image: "/src/assets/images/ronit_yellow_logo.png",
+    image: "/src/assets/images/ronit_verma.png",
   },
 
   twitter: {
@@ -35,7 +35,7 @@ const seo = {
     title: "Ronit Kumar Verma | Backend Developer",
     description:
       "Backend Developer specializing in Java, Spring Boot, and scalable backend systems.",
-    image: "/src/assets/images/ronit_yellow_logo.png",
+    image: "/src/assets/images/ronit_verma.png",
   },
 
   robots: "index, follow",
@@ -45,8 +45,7 @@ const greeting = {
   title: "Ronit Kumar Verma",
   logo_name: "Ronit Verma",
   nickname: "Java Developer",
-  subTitle:
-    "Building scalable, secure, and high-performance backend systems.",
+  subTitle: "Building scalable, secure, and high-performance backend systems.",
   resumeLink:
     "https://drive.google.com/file/d/1YrWxDb7QvsulPdyXX_Ka5aMdOn9-zcLy/view?usp=sharing",
   portfolio_repository: "https://github.com/ronitverma28/personal-portfolio",
@@ -54,7 +53,6 @@ const greeting = {
 };
 
 const socialMediaLinks = [
-
   {
     name: "Github",
     link: "https://github.com/ronitverma28",
@@ -119,7 +117,8 @@ const skills = {
           style: {
             color: "#1572B6",
           },
-        }, {
+        },
+        {
           skillName: "JS",
           fontAwesomeClassname: "logos-javascript",
           style: {
@@ -319,8 +318,7 @@ const competitiveSites = {
         color: "#5B4638",
       },
       profileLink: "https://www.codechef.com/users/ronitverma28",
-    }
-
+    },
   ],
 };
 
@@ -337,10 +335,10 @@ const degrees = {
         "⚡ Studied core subjects like Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, and Operating Systems.",
         "⚡ Actively building real-world projects using Java, Spring Boot, and REST APIs.",
         "⚡ Practicing problem-solving on platforms like LeetCode, HackerRank, and GeeksforGeeks.",
-        "⚡ Exploring modern technologies including Microservices Architecture and Cloud (AWS basics)."
+        "⚡ Exploring modern technologies including Microservices Architecture and Cloud (AWS basics).",
       ],
       website_link: "https://aktu.ac.in",
-    }
+    },
   ],
 };
 
@@ -377,7 +375,7 @@ const certifications = {
         "https://www.coursera.org/account/accomplishments/certificate/WALX8GE98J62",
       alt_name: "IBM",
       color_code: "#fff",
-    }
+    },
   ],
 };
 
@@ -401,16 +399,15 @@ const publications = {
       name: "Beyond the Myth of Linear Sorting",
       createdAt: "2025-12-01T00:00:00Z",
       description: "Paper published in IJRPR Journal",
-      url: "https://ijrpr.com/uploads/V6ISSUE12/IJRPR57262.pdf"
-    }
-
+      url: "https://ijrpr.com/uploads/V6ISSUE12/IJRPR57262.pdf",
+    },
   ],
 };
 
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "ronit_yellow_logo.png",
+    profile_image_path: "ronit_verma.png",
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
   },

@@ -21,15 +21,15 @@
   margin-top: 80px;
 }
 
-.blog-heading-div>* {
+.blog-heading-div > * {
   flex: 1;
 }
 
-.contact-heading-div>* {
+.contact-heading-div > * {
   flex: 1;
 }
 
-.address-heading-div>* {
+.address-heading-div > * {
   flex: 1;
 }
 
@@ -56,14 +56,14 @@
   text-align: center;
 }
 
-.contact-heading-img-div>* {
-  max-width: 100%;
-  height: 86%;
+.contact-heading-img-div > * {
+  max-width: 89%;
+  height: 89%;
   border-radius: 100%;
   border: 8px solid;
 }
 
-.blog-heading-img-div>* {
+.blog-heading-img-div > * {
   max-width: 100%;
   height: auto;
 }
