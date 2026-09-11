@@ -7,65 +7,23 @@
   margin-right: 5%;
 }
 
+/* =========================
+   CONTACT SECTION
+========================= */
+
 .contact-heading-div {
   display: flex;
   align-items: center;
-}
-
-.blog-heading-div {
-  display: flex;
-}
-
-.address-heading-div {
-  display: flex;
-  margin-top: 80px;
-}
-
-.blog-heading-div > * {
-  flex: 1;
+  width: 100%;
 }
 
 .contact-heading-div > * {
   flex: 1;
 }
 
-.address-heading-div > * {
-  flex: 1;
-}
-
-.contact-heading-img-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.blog-heading-img-div {
-  align-items: center;
-  justify-content: center;
-}
-
 .contact-heading-text-div {
   text-align: center;
-}
-
-.blog-heading-text-div {
-  text-align: center;
-}
-
-.address-heading-text-div {
-  text-align: center;
-}
-
-.contact-heading-img-div > * {
-  max-width: 89%;
-  height: 89%;
-  border-radius: 100%;
-  border: 8px solid;
-}
-
-.blog-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 .contact-heading-text {
@@ -75,6 +33,166 @@
   line-height: 1.1;
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.contact-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.contact-heading-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image-div img {
+  width: 89%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* =========================
+   RESUME BUTTON
+========================= */
+
+.resume-btn-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* =========================
+   ADDRESS SECTION - DESKTOP
+========================= */
+
+.address-heading-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 80px;
+  gap: 40px;
+
+  box-sizing: border-box;
+}
+
+/* Left side - SVG */
+.address-image-div {
+  flex: 1;
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+/* SVG itself */
+.address-image-div svg {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+
+  display: block;
+
+  border: none;
+  border-radius: 0;
+
+  box-sizing: border-box;
+}
+
+/* Right side - text */
+.address-heading-text-div {
+  flex: 1;
+  width: 50%;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* Address / Phone headings */
+.address-heading-text {
+  font-size: 30px;
+  font-family: "Google Sans Regular";
+
+  line-height: 1.2;
+
+  text-align: center;
+
+  margin: 15px 0 8px;
+}
+
+/* Description */
+.address-heading-text-div .contact-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+
+  margin: 0 0 15px;
+
+  text-align: center;
+}
+
+/* Google Maps button */
+.address-btn-div {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+/* =========================
+   BLOG
+========================= */
+
+.blog-heading-div {
+  display: flex;
+}
+
+.blog-heading-div > * {
+  flex: 1;
+}
+
+.blog-heading-img-div {
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-heading-img-div > * {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-heading-text-div {
+  text-align: center;
 }
 
 .blog-heading-text {
@@ -86,35 +204,13 @@
   margin-top: 40px;
 }
 
-.address-heading-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.contact-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
-}
-
 .blog-header-detail-text {
   font-size: 20px;
   line-height: 30px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Google Sans Medium";
-}
-
-.resume-btn-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .blogsite-btn-div {
@@ -123,12 +219,20 @@
   justify-content: center;
 }
 
+/* =========================
+   ADDRESS BUTTON
+========================= */
+
 .address-btn-div {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 0;
 }
+
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 1380px) {
   .contact-heading-text {
@@ -142,56 +246,448 @@
   }
 }
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 768px) {
+  /* =========================
+     MAIN CONTACT CONTAINER
+  ========================= */
+
+  .contact-main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .basic-contact {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 16px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* =========================
+     CONTACT SECTION
+  ========================= */
+
+  .contact-heading-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    margin: 0;
+    padding: 15px 0 0;
+
+    box-sizing: border-box;
+  }
+
+  /* Remove desktop flex: 1 on mobile */
+  .contact-heading-div > * {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* =========================
+     CONTACT TEXT
+  ========================= */
+
+  .contact-heading-text-div {
+    width: 100%;
+    max-width: 550px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    text-align: center;
+    box-sizing: border-box;
+  }
+
   .contact-heading-text {
-    font-size: 30px;
-    margin-top: 0px;
+    font-size: 32px;
+    line-height: 1.15;
+
+    margin: 10px 0 16px;
+
+    text-align: center;
+  }
+
+  .contact-header-detail-text {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto;
+    padding: 0 5px;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* =========================
+     SOCIAL MEDIA
+  ========================= */
+
+  .contact-heading-text-div > .social-media-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 20px;
+  }
+
+  /* =========================
+     RESUME BUTTON
+  ========================= */
+
+  .resume-btn-div {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 22px;
+    padding: 0;
+
+    box-sizing: border-box;
+  }
+
+  /* =========================
+     PROFILE IMAGE
+  ========================= */
+
+  .profile-image-div {
+    width: 100% !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 28px;
+    padding: 0 0 20px;
+
+    box-sizing: border-box;
+  }
+
+  .profile-image-div img {
+    display: block;
+
+    width: 270px;
+    height: 270px;
+
+    max-width: 72vw;
+    max-height: 72vw;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 6px solid;
+
+    box-sizing: border-box;
+  }
+
+  /* =========================
+     ADDRESS SECTION
+  ========================= */
+
+  .address-heading-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+
+    margin-top: 45px;
+
+    box-sizing: border-box;
+  }
+
+  /* Remove desktop flex: 1 */
+  .address-heading-div > * {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  /* =========================
+     ADDRESS SVG
+  ========================= */
+
+  .address-image-div {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+  }
+
+  .address-image-div svg {
+    width: 92%;
+    max-width: 500px;
+
+    height: auto;
+
+    display: block;
+
+    /* VERY IMPORTANT */
+    border: none;
+    border-radius: 0;
+
+    box-sizing: border-box;
+  }
+
+  /* =========================
+     ADDRESS TEXT
+  ========================= */
+
+  .address-heading-text-div {
+    width: 100%;
+    max-width: 550px;
+
+    margin-top: 25px;
+
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .address-heading-text {
+    font-size: 21px;
+    line-height: 1.3;
+
+    margin: 20px 0 8px;
+
+    text-align: center;
+  }
+
+  .address-heading-text-div .contact-header-detail-text {
+    width: 100%;
+    max-width: 500px;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding: 0 10px;
+
+    margin: 0 auto;
+
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* =========================
+     GOOGLE MAP BUTTON
+  ========================= */
+
+  .address-btn-div {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* =========================
+     BLOG SECTION
+  ========================= */
+
+  .blog-heading-div {
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 100%;
+
+    margin-top: 50px;
+  }
+
+  .blog-heading-div > * {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .blog-heading-text-div {
+    margin-top: 25px;
+    text-align: center;
   }
 
   .blog-heading-text {
     font-size: 30px;
-    margin-top: 0px;
+    line-height: 1.15;
+
+    margin-top: 0;
+
+    text-align: center;
+  }
+
+  .blog-header-detail-text {
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    text-align: center;
+  }
+
+  /* =========================
+     PREVENT HORIZONTAL SCROLL
+  ========================= */
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE — 480px AND BELOW
+========================================================= */
+
+@media (max-width: 480px) {
+  .basic-contact {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Contact heading */
+  .contact-heading-text {
+    font-size: 30px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+  }
+
+  /* Description */
+  .contact-header-detail-text {
+    font-size: 15px;
+    line-height: 1.48;
+    padding: 0 4px;
+  }
+
+  /* Profile image */
+  .profile-image-div {
+    margin-top: 25px;
+  }
+
+  .profile-image-div img {
+    width: 68vw;
+    height: 68vw;
+
+    min-width: 210px;
+    min-height: 210px;
+
+    max-width: 270px;
+    max-height: 270px;
+
+    border-width: 5px;
+  }
+
+  .address-heading-div {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 45px;
+    gap: 0;
+  }
+
+  .address-image-div {
+    width: 100%;
+    flex: none;
+  }
+
+  .address-image-div svg {
+    width: 92%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .address-heading-text-div {
+    width: 100%;
+    flex: none;
+    max-width: 550px;
+    margin-top: 25px;
+  }
+}
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+  .basic-contact {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .contact-heading-div {
+    padding-top: 8px;
+  }
+
+  .contact-heading-text {
+    font-size: 30px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+  }
+
+  .contact-header-detail-text {
+    font-size: 15px;
+    line-height: 1.48;
+    padding: 0 5px;
+  }
+
+  /* Smaller profile */
+  .profile-image-div {
+    margin-top: 25px;
+  }
+
+  .profile-image-div img {
+    width: 68vw;
+    height: 68vw;
+    min-width: 210px;
+    min-height: 210px;
+    max-width: 270px;
+    max-height: 270px;
+    border-width: 5px;
+  }
+
+  .address-heading-div {
+    margin-top: 40px;
   }
 
   .address-heading-text {
     font-size: 20px;
   }
 
-  .blog-heading-div {
-    flex-direction: column-reverse;
-    margin-top: 60px;
+  .address-heading-text-div .contact-header-detail-text {
+    font-size: 15px;
   }
 
-  .address-heading-div {
-    flex-direction: column;
-    margin-top: 60px;
-  }
-
-  .blog-heading-text-div {
-    margin-top: 40px;
-  }
-
-  .address-heading-text-div {
-    margin-top: 40px;
-  }
-
-  .contact-heading-div {
-    flex-direction: column;
-  }
-
-  .contact-header-detail-text {
-    font-size: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
-  }
-
-  .blog-header-detail-text {
-    font-size: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
+  .address-btn-div {
+    margin-top: 18px;
   }
 }

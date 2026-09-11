@@ -22,7 +22,6 @@ class Contact extends Component {
         <div className="basic-contact">
           <Fade bottom duration={1000} distance="40px">
             <div className="contact-heading-div">
-
               <div className="contact-heading-text-div">
                 <h1
                   className="contact-heading-text"
@@ -38,14 +37,10 @@ class Contact extends Component {
                 </p>
                 <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
-                  <Button
-                    text="See My Resume"
-                    href="/resume"
-                    theme={theme}
-                  />
+                  <Button text="See My Resume" href="/resume" theme={theme} />
                 </div>
               </div>
-              <div className="contact-heading-img-div">
+              <div className="contact-heading-img-div profile-image-div">
                 <img
                   src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
                   alt=""
@@ -56,8 +51,7 @@ class Contact extends Component {
 
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
-              <div className="contact-heading-img-div">
-
+              <div className="contact-heading-img-div address-image-div">
                 <AddressImg theme={theme} />
               </div>
               <div className="address-heading-text-div">
